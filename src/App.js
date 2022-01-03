@@ -25,7 +25,7 @@ class App extends React.Component {
             <div className={styles.container}>
                 <img className={styles.image} src={coronaImage} alt='corona' />
                 <h3>Covid Tracker</h3>
-                <em>The Recovered value is not updated on a daily basis</em>
+                <em>The Recovered value is a tentative maximum recoveries possible</em>
                 <Cards data={data}/>
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 <Charts data={data} country={country}/>
